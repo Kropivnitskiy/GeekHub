@@ -1,0 +1,19 @@
+
+.container {
+  max-width: 1470px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
