@@ -1,0 +1,39 @@
+
+.discover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  background-image: url("../img/header-slide-first.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+
+  .discover-title {
+    font-family: $font-oswald-heavy;
+    font-size: 3.5rem;
+    color: $color-default;
+    text-transform: uppercase;
+  }
+
+  .discover-subtitle {
+    padding-top: 20px;
+    font-family: $font-great-vibes;
+    color: $color-primary;
+    font-size: 80px;
+    padding-bottom: 90px;
+  }
+}
+
+@media (max-width: 320px) {
+  .discover {
+    background-position-x: 38%;
+  }
+}
+
+@media (max-width: 414px) {
+  .discover {
+    background-position-x: 40%;
+  }
+}

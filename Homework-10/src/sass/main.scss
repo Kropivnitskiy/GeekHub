@@ -1,0 +1,28 @@
+@import "normalize/import-now";
+
+@import 'utils/variables';
+
+@import 'base/basic';
+@import 'base/flex';
+
+@import 'components/button';
+@import 'components/container';
+@import 'components/fonts';
+@import 'components/input';
+@import 'components/slider';
+@import 'components/table';
+@import 'components/titles';
+
+
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/section-consert';
+@import 'layout/section-discover';
+@import 'layout/section-download-apps';
+@import 'layout/section-introducing';
+@import 'layout/section-history';
+@import 'layout/section-songs';
+@import 'layout/section-subscribe';
+@import 'layout/footer';
+
+@import 'pages/home';

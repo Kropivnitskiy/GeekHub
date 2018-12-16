@@ -1,0 +1,66 @@
+button {
+  border: none;
+  background-color: $color-white;
+  color: $color-default;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.button-white {
+  display: inline-block;
+  font-family: $font-droid-sans-bold;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 25px;
+  background-color: $color-white;
+}
+
+.button-white a {
+  padding: 20px 40px;
+  font-size: 12px;
+  color: $color-default;
+  line-height: 40px;
+}
+
+.button-white:hover {
+  transition: 0.3ms;
+  opacity: 0.8;
+}
+
+
+
+.header-button .button-white {
+  padding: 0 45px;
+  font-size: 12px;
+  line-height: 40px;
+  background-color: $color-white;
+  color: $color-default;
+}
+
+
+
+.button-red {
+  display: inline-block;
+  font-family: $font-droid-sans-bold;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 30px;
+  border-radius: 25px;
+  background-color: $color-default;
+}
+
+.button-red a {
+  padding: 20px 45px;
+  font-size: 12px;
+  color: $color-white;
+  line-height: 40px;
+}
+
+.button-red:hover {
+  transition: 0.3ms;
+  opacity: 0.8;
+}

@@ -1,0 +1,30 @@
+
+
+.left-aside img {
+  margin-top: 50px;
+}
+
+.video {
+  margin-top: 40px;
+}
+
+
+@media (max-width: 1023px) {
+  .consert-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px) {
+  .consert-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .consert aside {
+    width: calc(100% / 3);
+  }
+}

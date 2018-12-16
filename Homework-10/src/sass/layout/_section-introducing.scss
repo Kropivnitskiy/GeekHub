@@ -1,0 +1,69 @@
+.music-introducing-list {
+  padding-top: 35px;
+}
+
+
+.photo-participant {
+  display: inline-block;
+  position: relative;
+}
+
+.photo-participant:hover {
+  opacity: 1;
+}
+
+.photo-participant .signature {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: $color-default;
+}
+
+.unvisible-signature {
+  display: none;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: $color-default;
+}
+
+.photo-participant:hover .signature:hover .unvisible-signature {
+  display: block;
+  background: $color-default;
+}
+
+.signature-name {
+  color: $color-white;
+  font-family: $font-oswald-regular;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 20px;
+  padding: 15px 0 0 25px;
+}
+
+.signature-instruments {
+  color: $color-white;
+  font-family: $font-droid-sans-regular;
+  font-size: 1rem;
+  line-height: 20px;
+  padding: 0 0 15px 25px;
+}
+
+@media (max-width: 767px) {
+  .music-introducing-list {
+    margin: 0 auto;
+  }
+
+  .music-introducing-item {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .music-introducing-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

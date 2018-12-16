@@ -1,0 +1,24 @@
+.block-title {
+  font-family: $font-oswald-regular;
+  font-size: 32px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $color-primary;
+}
+
+.block-subtitle {
+  font-family: $font-great-vibes;
+  font-size: 32px;
+  line-height: 30px;
+  color: $color-default;
+}
+
+@media (max-width: 1023px) {
+  .block-title {
+    text-align: center;
+  }
+
+  .block-subtitle {
+    text-align: center;
+  }
+}

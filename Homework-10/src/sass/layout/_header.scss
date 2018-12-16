@@ -1,0 +1,61 @@
+header {
+  background-color: $color-default;
+  padding: 0 50px;
+}
+
+.menu-header a {
+  display: inline-block;
+  text-align: center;
+  padding: 15px;
+  font-family: $font-droid-sans-bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 44px;
+  color: $color-white;
+}
+
+ a:hover {
+  opacity: 0.8;
+  transition: 0.4ms;
+}
+
+.logo {
+
+}
+
+.social-networks-item {
+  display: inline-block;
+  padding: 15px;
+  font-family: $font-open-sans;
+  font-size: 14px;
+  line-height: 44px;
+  color: $color-white;
+  white-space: pre;
+}
+
+
+@media (max-width: 1024px) {
+
+  .menu-header {
+    display: block;
+    text-align: center;
+  }
+
+  .logo {
+    display: block;
+    text-align: center;
+  }
+
+  .social-networks {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

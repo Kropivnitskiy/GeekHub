@@ -1,0 +1,27 @@
+.progress-bar {
+  position: relative;
+  top: -3px;
+  width: 70%;
+  height: 3px;
+  background: $color-default;
+  animation: fullexpand 25s ease-out infinite;
+}
+
+.slider-set {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 0;
+}
+
+.slider-set-item {
+  margin: 0 5px;
+  background-color: $color-default;
+  font-size: 24px;
+}
+
+.slider-set-item a {
+  padding: 0 10px;
+  line-height: 30px;
+  color: $color-white;
+}

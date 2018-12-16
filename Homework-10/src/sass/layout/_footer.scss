@@ -1,0 +1,31 @@
+footer {
+  border-top: 1px solid #d2d2d2;
+}
+
+.menu-footer a {
+  display: inline-block;
+  padding: 0 15px;
+  font-family: $font-droid-sans-bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: $color-primary;
+}
+
+.menu-footer-lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menu-footer p {
+  font-family: $font-droid-sans-bold;
+  font-size: 13px;
+  color: $color-primary;
+  text-align: center;
+}
+
+.menu-footer p span {
+  font-family: $font-great-vibes;
+  font-size: 28px;
+  color: $color-default;
+}

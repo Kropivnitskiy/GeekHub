@@ -1,0 +1,50 @@
+.soundcloud-player {
+  padding-top: 35px;
+}
+
+.song-lists ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.song-lists li {
+  border-bottom: 1px solid #999999;
+}
+
+.song-lists li a {
+  font-family: $font-droid-sans-regular;
+  font-weight: 400;
+  font-size: 16px;
+  color: $color-primary;
+  line-height: 30px;
+}
+
+.instagram-photo {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.instagram-photo-lists li {
+  padding-top: 20px;
+}
+
+
+@media (min-width: 1024px) {
+
+  .songs {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .player {
+    width: calc(100% / 3 * 2);
+  }
+
+  .insagram {
+    width: calc(100% / 3);
+  }
+
+}
