@@ -45,7 +45,7 @@ function factorial() {
 
   if (!checkValue) {
     myform.display.value = inputValue;
-    var final = 1;
+    let final = 1;
 
     while(inputValue >= 1) {
       final = final * inputValue;
