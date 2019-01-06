@@ -1,0 +1,18 @@
+.wrapper {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+input {
+  width: 50px;
+}
+
+form {
+  margin-top: 200px;
+}
+
+.display {
+  width: 260px;
+}
