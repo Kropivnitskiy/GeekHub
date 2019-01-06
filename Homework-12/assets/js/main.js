@@ -36,7 +36,7 @@ function square(){
 }
 
 function sqrt(){
-  myform.display.value=Math.sqrt(myform.display.value);
+  myform.display.value = Math.sqrt(myform.display.value);
 }
 
 function factorial() {
