@@ -7,7 +7,7 @@ function fneval(){
 }
 
 function ac(){
-  myform.display.value='0';
+  myform.display.value='';
 }
 
 function backspace(){
