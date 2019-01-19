@@ -1,0 +1,276 @@
+.hero {
+  background: url('../img/hero-cover.png') center no-repeat;
+  background-size: cover;
+
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: $dark-color;
+    //text-align: center;
+  }
+
+  .title {
+    color: $dark-color;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .sub-title {
+    color: #949494;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .scrool {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 36px);
+  }
+
+  @media (min-width: 768px) {
+    .scrool {
+      bottom: 60px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .scrool {
+      bottom: 100px;
+    }
+  }
+}
+
+.best {
+  max-width: 100%;
+
+  .row {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  &__section {
+    background: $dark-color;
+    box-sizing: border-box;
+    color: $light-color;
+
+    .container {
+      max-width: 570px;
+      width: 100%;
+      padding: 100px 0;
+    }
+
+    @media (min-width: 1024px) {
+      .no-m-right {
+        margin-right: 0;
+        padding-right: 60px;
+      }
+
+      .no-m-left {
+        margin-left: 0;
+        padding-left: 60px;
+      }
+    }
+
+  }
+
+  &__section:nth-child(1) {
+    background: url('../img/best-design.png') top left no-repeat;
+    background-size: cover;
+  }
+
+  &__section:nth-child(2) {
+    background: url('../img/best-code.png') top left no-repeat;
+    background-size: cover;
+  }
+
+  .title {
+    font-size: 48px;
+    line-height: 36px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+
+  .bold {
+    font-weight: 700;
+  }
+
+  .sub-title {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+.we-do {
+  padding: 100px 0;
+
+  .section-title {
+    margin-bottom: 100px;
+    color: $dark-color;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  &__card {
+    margin-bottom: 50px;
+  }
+
+  &__card__content {
+    margin-top: 25px;
+
+    .title {
+      margin-bottom: 25px;
+      color: $dark-color;
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    .description {
+      color: $secondary-color;
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .we-do__card__icon {
+      margin-right: 25px;
+    }
+
+    .we-do__card__content {
+      margin-top: 0;
+    }
+  }
+}
+
+.our-work {
+
+  .slides {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .slides__item {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex: 0 0 auto;
+
+    img {
+      height: 100%;
+    }
+
+    &__view {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      padding: 20px;
+      display: none;
+      color: $light-color;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .title {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 10px;
+      font-weight: 300;
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .slides__item {
+      width: 50%;
+    }
+
+    .title {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 16px;
+      font-weight: 300;
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .slides__item {
+      width: calc(100% / 3);
+    }
+  }
+
+  .slides__item:hover .slides__item__view{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition-property: background;
+    transition: 0.5s;
+  }
+}
+
+.about-us {
+  padding: 100px 0;
+  color: $light-color;
+  background: url('../img/Layer_15.png') rgba(0, 0, 0, 0.6) center no-repeat;
+  background-size: cover;
+
+  .heading {
+    margin-bottom: 100px;
+
+    .title {
+      font-size: 48px;
+    }
+
+    .description {
+      color: $secondary-color;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 30px;
+    }
+  }
+
+  .user-card {
+    margin-bottom: 50px;
+
+    &__title {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 30px 0;
+    }
+
+    &__description {
+      color: $secondary-color;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 30px;
+    }
+  }
+}
+
+.location-map {
+  width: 100%;
+  box-sizing: border-box;
+
+  iframe {
+    width: 100%;
+    min-height: 420px;
+  }
+}
